@@ -17,7 +17,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Webpack Restaurant',
+			title: 'ToDo App',
 			template: './dist/index2.html',
 		}),
 	],
