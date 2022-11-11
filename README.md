@@ -1,7 +1,9 @@
 # todo_project
+
  Simple todo app using local storage
 
 ## Project Requirements
+
 <https://www.theodinproject.com/lessons/node-path-javascript-todo-list>
 
 ### Initial Planning Thoughts
@@ -12,7 +14,6 @@
 - Build with Webpack
 - First time working with local storage - review docs
 - Review modal examples -- apply to project
-
 
 ### Properties to include in ToDo object
 
@@ -33,7 +34,7 @@
 - view all projects
 - view all todos in each project (Project Title, todo title and duedate with a color applied for high priority)
 - expand a todo to see and edit details
-- delete todo 
+- delete todo
 - delete project (not actually in requirements but not having that is wonky) assigned todo's for deleted project go back to default project or give option to delete all???
 
 ### localStorage tips
@@ -47,8 +48,8 @@
 
 - Default View (list view)
 
-![](2022-11-10-20-42-39.png)
+![UI Mockup 1](2022-11-10-20-42-39.png)
 
-- View Details / Create New / Edit 
+- View Details / Create New / Edit
   
-![](2022-11-10-20-43-47.png)
+![UI Mockup 2](2022-11-10-20-43-47.png)
