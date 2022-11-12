@@ -1,10 +1,15 @@
-function component() {
-	const element = document.createElement('div');
+import PubSub from 'pubsub-js';
 
-	// Lodash, currently included via a script, is required for this line to work
-	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+export function component(
+	text = 'sample',
+	classname = '',
+	appendTo = 'content',
+	elem = 'div'
+) {
+	const element = document.createElement(elem);
+	const toAppendto = document.getElementById(`${appendTo}`);
+	element.className = classname;
+	element.textContent = text;
 
-	return element;
+	return toAppendto.appendChild(element);
 }
-
-document.body.appendChild(component());
