@@ -8,16 +8,16 @@
 
 ### Initial Planning Thoughts
 
-- Nothing crazy fancy, UI or in functionality. Going for an MVP.
+- Nothing crazy fancy, UI or in functionality. Going to *try* for an MVP.
 - Keep working towards goal of modular, reusuable code that for the most part is SOLID - with the main focus on Single Responsibility (S) and Loose Coupling (D)
 - Implement a pub/sub architecture design / design pattern in this project
 - Build with Webpack
 - First time working with local storage - review docs
 - Review modal examples -- apply to project
 
-### Properties to include in ToDo object
+### Properties to include in the main 'ToDo object'
 
-- record key/hash (md5 hash library)
+- record key/hash (UUID Library)
 - title
 - description
 - due date (using date libary)
@@ -53,3 +53,16 @@
 - View Details / Create New / Edit
   
 ![UI Mockup 2](2022-11-10-20-43-47.png)
+
+### Main Modules
+
+- container
+- project sort
+- todo sort
+- logo pane
+- todo sort pane
+- project pane
+- todo pane
+- localStorage write
+- localStorage read
+- pub/sub controller
