@@ -18,7 +18,8 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: 'ToDo App',
-			template: './dist/index2.html',
+			template: './src/index.html',
+			favicon: './src/icons8-todo-list-24.png',
 		}),
 	],
 	module: {
