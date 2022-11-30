@@ -25,9 +25,9 @@
 - priority flag (normal / high) (boolean)
 - todo completion status (boolean)
 - project todo belongs to (defaults to default project)
-- the soonest todo due date for
-- creation date / time (for sort using date library)
-- last modified date / time (for sort using date library)
+- the soonest todo's due date for a project 
+- creation timestamp (for sort using date library)
+- last modified timestamp (for sort using date library)
   
 #### Required Views
 
