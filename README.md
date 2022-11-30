@@ -6,7 +6,7 @@
 
 <https://www.theodinproject.com/lessons/node-path-javascript-todo-list>
 
-### Initial Planning Thoughts
+### My Initial Planning Thoughts
 
 - Nothing crazy fancy, UI or in functionality. Going to *try* for an MVP.
 - Keep working towards goal of modular, reusuable code that for the most part is SOLID - with the main focus on Single Responsibility (S) and Loose Coupling (D)
@@ -15,7 +15,7 @@
 - First time working with local storage - review docs
 - Review modal examples -- apply to project
 
-### Properties to include in the main 'ToDo object'
+#### Properties to include in the main 'ToDo object'
 
 - record key/hash (UUID Library)
 - title
@@ -29,7 +29,7 @@
 - creation date / time (for sort using date library)
 - last modified date / time (for sort using date library)
   
-### Required Views
+#### Required Views
 
 - view all projects
 - view all todos in each project (Project Title, todo title and duedate with a color applied for high priority)
@@ -37,14 +37,14 @@
 - delete todo
 - delete project (not actually in requirements but not having that is wonky) assigned todo's for deleted project go back to default project or give option to delete all???
 
-### localStorage tips
+#### localStorage tips
 
 - make function that checks localstorage for data when app is first loaded
 - make function that saves / updates when todo's or projects are edited
 - handle there not being any localstorage data to prevent crash
 - its JSON, so don't try to store methods
 
-### UI Mockups
+#### UI Mockups
 
 - Default View (list view)
 
@@ -54,7 +54,7 @@
   
 ![UI Mockup 2](2022-11-10-20-43-47.png)
 
-### Main Modules
+#### Main Modules
 
 - container
 - project sort
