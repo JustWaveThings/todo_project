@@ -1,3 +1,5 @@
-import component from './index'
+import { component } from './index';
 
-component(
+export const container = (function () {
+	component();
+})();
