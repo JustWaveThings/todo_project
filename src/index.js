@@ -1,4 +1,6 @@
-import PubSub from 'pubsub-js';
+/* import PubSub from 'pubsub-js'; */
+import './style.css';
+import container from './container';
 
 export function component(
 	text = 'sample',
