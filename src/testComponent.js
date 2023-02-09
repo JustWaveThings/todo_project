@@ -1,13 +1,13 @@
 export function component(
-	text = 'sample 23',
-	classname = 'test',
-	appendTo = 'content',
-	elem = 'div'
+  text = "sample 2d3",
+  classname = "test",
+  appendTo = "content",
+  elem = "div"
 ) {
-	const element = document.createElement(elem);
-	const toAppendto = document.getElementById(`${appendTo}`);
-	element.className = classname;
-	element.textContent = text;
+  const element = document.createElement(elem);
+  const toAppendto = document.getElementById(`${appendTo}`);
+  element.className = classname;
+  element.textContent = text;
 
-	return toAppendto.appendChild(element);
+  return toAppendto.appendChild(element);
 }
