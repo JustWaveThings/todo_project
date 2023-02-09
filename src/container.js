@@ -1,5 +1,5 @@
-import { component } from './index';
+import { component } from './index.js';
 
 export const container = (function () {
-	component();
+	return component();
 })();

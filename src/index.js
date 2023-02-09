@@ -1,10 +1,9 @@
-/* import PubSub from 'pubsub-js'; */
 import './style.css';
-import container from './container';
+import { container } from './container';
 
 export function component(
-	text = 'sample',
-	classname = '',
+	text = 'sample 23',
+	classname = 'test',
 	appendTo = 'content',
 	elem = 'div'
 ) {
