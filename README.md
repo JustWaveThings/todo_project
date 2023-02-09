@@ -1,6 +1,6 @@
 # todo_project
 
- Simple todo app using local storage
+ Simple todo app using local storage   -- UPDATE: see note at bottom.
 
 ## Project Requirements
 
@@ -8,9 +8,9 @@
 
 ### My Initial Planning Thoughts
 
-- Nothing crazy fancy, UI or in functionality. Going to *try* for an MVP.
+- Nothing crazy fancy, UI or in functionality. Going to make an MVP.
 - Keep working towards goal of modular, reusuable code that for the most part is SOLID - with the main focus on Single Responsibility (S) and Loose Coupling (D)
-- Implement a pub/sub architecture design / design pattern in this project
+- ~~Implement a pub/sub architecture design / design pattern in this project~~ MVC instead
 - Build with Webpack
 - First time working with local storage - review docs
 - Review modal examples -- apply to project
@@ -42,7 +42,7 @@
 - make function that checks localstorage for data when app is first loaded
 - make function that saves / updates when todo's or projects are edited
 - handle there not being any localstorage data to prevent crash
-- its JSON, so don't try to store methods
+- its JSON, so don't try to store methods?? check assumptions on this... 
 
 #### UI Mockups
 
@@ -66,3 +66,8 @@
 - localStorage write
 - localStorage read
 - pub/sub controller
+
+
+
+## NOTE: (2/9/23)
+The information above was written out two months ago, and I've decided to pare down my aspirations for this project. I will keep it for reference, but I am not commiting myself to implementing every aspect.
