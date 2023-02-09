@@ -1,5 +1,6 @@
-import { component } from './index.js';
+import { component } from './testComponent.js';
+import { TodoObject } from './todo_object.js';
 
 export const container = (function () {
-	return component();
+	component();
 })();
