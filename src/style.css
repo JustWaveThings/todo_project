@@ -1,7 +1,23 @@
 :root {
   background-color: black;
-  color:bisque;
+  color: teal;
   margin: 0;
   border: 0;
   
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 80%
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: .5rem;
+  padding: .25rem;
+  color: whitesmoke
 }
