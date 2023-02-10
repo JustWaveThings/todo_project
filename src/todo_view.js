@@ -26,7 +26,6 @@ export function todoView(
 		priority: { className: 'todo-priority', textContent: priority },
 		project: { className: 'todo-project', textContent: project },
 		status: { className: 'todo-status', textContent: status },
-		id: { className: 'todo-id', textContent: id },
 	};
 
 	Object.keys(props).forEach((key) => {
