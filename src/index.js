@@ -1,4 +1,26 @@
 import './style.css';
-import { container } from './container';
+import { TodoObject } from './todo_object';
+import { todoView } from './todo_view';
 
-container();
+const todo = new TodoObject(
+	'Go shopping',
+	"Buy milk, bread, and ho-ho's",
+	'2022-12-24',
+	'High',
+	'Personal',
+	'Incomplete'
+);
+
+(function () {
+	todoView(
+		todo.getTitle(),
+		todo.getDescription(),
+		todo.getDueDate(),
+		todo.getPriority(),
+		todo.getProject(),
+		todo.getStatus(),
+		todo.getId(),
+		'content',
+		'div'
+	);
+})();
