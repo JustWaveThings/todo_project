@@ -21,6 +21,38 @@
   color: whitesmoke
 }
 
-.todo-status {
-   order: 1;
+.todo-container :nth-child(1),
+.todo-container :nth-child(1)+* {
+
+  order: 3;
+}
+
+.todo-container :nth-child(3),
+.todo-container :nth-child(3)+* {
+
+  order: 4;
+}
+
+.todo-container :nth-child(5),
+.todo-container :nth-child(5)+* {
+
+  order: 5;
+}
+
+.todo-container :nth-child(7),
+.todo-container :nth-child(7)+* {
+
+  order: 6;
+}
+
+.todo-container :nth-child(9),
+.todo-container :nth-child(9)+* {
+ 
+  order: 2;
+}
+
+.todo-container :nth-child(11),
+.todo-container :nth-child(11)+* {
+
+  order: 1;
 }
