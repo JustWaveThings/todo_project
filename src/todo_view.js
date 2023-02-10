@@ -30,7 +30,7 @@ export function todoView(
 
 	Object.keys(props).forEach((key) => {
 		const label = document.createElement(elem);
-		label.className = 'label';
+		label.className = `label ${key}`;
 		label.textContent = `${key}: `;
 		container.appendChild(label);
 
