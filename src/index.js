@@ -1,8 +1,8 @@
 import './style.css';
 import { TodoObject } from './todo_object';
 import { todoView } from './todo_view';
-//import { openNewTodo, closeNewTodo } from './add_todo_popup/new_todo';
 
+// test object
 const todo = new TodoObject(
 	'Go shopping',
 	"Buy milk, bread, and ho-ho's",
@@ -12,6 +12,7 @@ const todo = new TodoObject(
 	'Incomplete'
 );
 
+// displays the todo instance of the TodoObject class
 (function () {
 	todoView(
 		todo.getTitle(),
