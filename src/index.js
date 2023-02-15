@@ -1,6 +1,7 @@
 import './style.css';
 import { TodoObject } from './todo_object';
 import { todoView } from './todo_view';
+import addTodoButton from './add_todo_popup/add_todo_button';
 
 // test object
 const todo = new TodoObject(
