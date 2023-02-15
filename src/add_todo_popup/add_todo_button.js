@@ -1,4 +1,6 @@
+import * as todo_dialog from './todo_dialog_form';
 const placeTodoButton = document.body;
+
 export const addTodoButton = document.createElement('button');
 addTodoButton.textContent = 'Add Todo';
 addTodoButton.id = 'add-todo-button';
