@@ -2,7 +2,10 @@ import './style.css';
 import { TodoObject } from './todo_object';
 import { todoView } from './todo_view';
 import addTodoButton from './add_todo_popup/add_todo_button';
-import todoDialog from './add_todo_popup/todo_dialog_form';
+import {
+	todoDialog,
+	todoList,
+} from './add_todo_popup/todo_dialog_form';
 
 // test object
 const todo = new TodoObject(

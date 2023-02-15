@@ -1,7 +1,7 @@
 import { TodoObject } from '../todo_object';
 
 // not sure this goes here, but it will be here for now...
-const todoList = [];
+export const todoList = [];
 
 //this is the form that will be displayed in the modal, to create a new todo
 
@@ -110,6 +110,19 @@ submitNewTodo.addEventListener('click', (e) => {
 	todoList.push(jerry);
 	console.log(todoList);
 	form.reset();
+	modal.close();
 });
 
 form.appendChild(submitNewTodo);
+
+const cancelNewTodo = document.createElement('button');
+cancelNewTodo.textContent = 'Cancel';
+cancelNewTodo.id = 'Cancel-Todo';
+cancelNewTodo.classList = 'Cancel-Todo';
+cancelNewTodo.type = 'reset';
+cancelNewTodo.name = 'cancel';
+cancelNewTodo.addEventListener('click', (e) => {
+	modal.close();
+});
+
+form.appendChild(cancelNewTodo);
