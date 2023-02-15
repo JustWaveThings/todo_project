@@ -2,10 +2,7 @@ import './style.css';
 import { TodoObject } from './todo_object';
 import { todoView } from './todo_view';
 import addTodoButton from './add_todo_popup/add_todo_button';
-import {
-	todoDialog,
-	todoList,
-} from './add_todo_popup/todo_dialog_form';
+import { todoList } from './add_todo_popup/todo_dialog_form';
 
 // test object
 const todo = new TodoObject(
@@ -17,17 +14,28 @@ const todo = new TodoObject(
 	'Incomplete'
 );
 
-// displays the todo instance of the TodoObject class
-(function () {
-	todoView(
-		todo.getTitle(),
-		todo.getDescription(),
-		todo.getDueDate(),
-		todo.getPriority(),
-		todo.getProject(),
-		todo.getStatus(),
-		todo.getId(),
-		'content',
-		'div'
-	);
-})();
+todoList.push(todo);
+
+function redrawTodoList() {
+	const content = document.getElementById('content');
+
+	while (content.firstChild) {
+		content.removeChild(content.firstChild);
+	}
+	todoList.forEach((todo) => {
+		todoView(
+			todo.getTitle(),
+			todo.getDescription(),
+			todo.getDueDate(),
+			todo.getPriority(),
+			todo.getProject(),
+			todo.getStatus(),
+			todo.getId(),
+			'content',
+			'div'
+		);
+	});
+}
+
+//redrawTodoList(); // this currently is what breaks the add todo button  // because modal is not defined
+export default redrawTodoList;

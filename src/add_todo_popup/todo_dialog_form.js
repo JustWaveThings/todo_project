@@ -1,5 +1,5 @@
 import { TodoObject } from '../todo_object';
-
+import redrawTodoList from '..';
 // not sure this goes here, but it will be here for now...
 export const todoList = [];
 
@@ -109,8 +109,12 @@ submitNewTodo.addEventListener('click', (e) => {
 	);
 	todoList.push(jerry);
 	console.log(todoList);
-	form.reset();
+	/* form.reset();
+	console.log('form reset'); */
 	modal.close();
+	console.log('modal close');
+	redrawTodoList();
+	console.log(`redrawTodoList`);
 });
 
 form.appendChild(submitNewTodo);

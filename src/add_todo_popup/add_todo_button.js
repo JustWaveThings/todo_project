@@ -7,6 +7,6 @@ addTodoButton.id = 'add-todo-button';
 addTodoButton.classList = 'add-todo-button';
 addTodoButton.addEventListener('click', (e) => {
 	modal.showModal();
-	console.log(e);
+	console.log('modal.showModal() worked');
 });
 placeTodoButton.appendChild(addTodoButton);
