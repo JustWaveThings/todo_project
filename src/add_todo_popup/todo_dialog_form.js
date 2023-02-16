@@ -1,6 +1,5 @@
-import { TodoObject } from '../todo_object';
-import redrawTodoList from '../redrawTodoList';
-
+import { cancelNewTodo } from './cancelNewTodo';
+import { submitNewTodo } from './submitNewTodo';
 // not sure this goes here, but it will be here for now...
 export const todoList = [];
 
@@ -20,7 +19,7 @@ title.style.display = 'block';
 title.id = 'todo-title';
 parent.appendChild(title);
 
-const form = document.createElement('form');
+export const form = document.createElement('form');
 form.id = 'todo-form';
 form.method = 'dialog';
 parent.appendChild(form);
@@ -29,7 +28,7 @@ const titleLabel = document.createElement('label');
 titleLabel.textContent = 'Title';
 form.appendChild(titleLabel);
 
-const titleInput = document.createElement('input');
+export const titleInput = document.createElement('input');
 titleInput.type = 'text';
 titleInput.id = 'title-input';
 titleInput.name = 'title';
@@ -40,7 +39,7 @@ const descriptionLabel = document.createElement('label');
 descriptionLabel.textContent = 'Description';
 form.appendChild(descriptionLabel);
 
-const descriptionInput = document.createElement('input');
+export const descriptionInput = document.createElement('input');
 descriptionInput.type = 'text';
 descriptionInput.id = 'description-input';
 descriptionInput.name = 'description';
@@ -51,7 +50,7 @@ const dueDateLabel = document.createElement('label');
 dueDateLabel.textContent = 'Due Date';
 form.appendChild(dueDateLabel);
 
-const dueDateInput = document.createElement('input');
+export const dueDateInput = document.createElement('input');
 dueDateInput.type = 'date';
 dueDateInput.id = 'due-date-input';
 dueDateInput.name = 'due-date';
@@ -62,7 +61,7 @@ const priorityLabel = document.createElement('label');
 priorityLabel.textContent = 'Priority';
 form.appendChild(priorityLabel);
 
-const priorityInput = document.createElement('input');
+export const priorityInput = document.createElement('input');
 priorityInput.defaultValue = 'Low';
 priorityInput.type = 'text';
 priorityInput.id = 'priority-input';
@@ -74,7 +73,7 @@ const projectLabel = document.createElement('label');
 projectLabel.textContent = 'Project';
 form.appendChild(projectLabel);
 
-const projectInput = document.createElement('input');
+export const projectInput = document.createElement('input');
 projectInput.defaultValue = 'Not Assigned';
 projectInput.type = 'text';
 projectInput.id = 'project-input';
@@ -86,45 +85,13 @@ const statusLabel = document.createElement('label');
 statusLabel.textContent = 'Status';
 form.appendChild(statusLabel);
 
-const statusInput = document.createElement('input');
+export const statusInput = document.createElement('input');
 statusInput.type = 'text';
 statusInput.id = 'status-input';
 statusInput.name = 'status';
 statusInput.required = false;
 statusLabel.appendChild(statusInput);
 
-const submitNewTodo = document.createElement('button');
-submitNewTodo.textContent = 'Submit Todo';
-submitNewTodo.id = 'Submit-Todo';
-submitNewTodo.classList = 'Submit-Todo';
-submitNewTodo.type = 'submit';
-submitNewTodo.name = 'submit';
-submitNewTodo.addEventListener('click', (e) => {
-	e.preventDefault();
-	let jerry = new TodoObject(
-		titleInput.value,
-		descriptionInput.value,
-		dueDateInput.value,
-		priorityInput.value,
-		projectInput.value,
-		statusInput.value
-	);
-	todoList.push(jerry);
-	modal.close();
-	form.reset();
-	redrawTodoList();
-});
-
 form.appendChild(submitNewTodo);
-
-const cancelNewTodo = document.createElement('button');
-cancelNewTodo.textContent = 'Cancel';
-cancelNewTodo.id = 'Cancel-Todo';
-cancelNewTodo.classList = 'Cancel-Todo';
-cancelNewTodo.type = 'reset';
-cancelNewTodo.name = 'cancel';
-cancelNewTodo.addEventListener('click', (e) => {
-	modal.close();
-});
 
 form.appendChild(cancelNewTodo);
