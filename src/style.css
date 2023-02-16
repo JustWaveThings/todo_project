@@ -44,7 +44,8 @@ body{
   font-size: 1.1rem;
   font-weight: bold;
   margin: .5rem;
-  color: rgba(19, 6, 200, 0.784)
+  color: rgba(19, 6, 200, 0.784);
+  display: grid;
 }
 
 
@@ -126,18 +127,27 @@ body{
   background-color: white;
 }
 
-#title-label, #title-input, #todo-title{
-  grid-area: 1 / 1 / 1 / 5;
+#title-label,  #todo-title{
+  grid-area: 1 / 1 / 1 / 3;
+  display: grid;
+}
+
+#title-input {
+  grid-area: 1 / 1 / 1 / 2;
+  width: 100%;
+  display: grid;
 }
 
 #project-label, #project-input{
   grid-area: 1 / 3 / 2 / 5;
+  display: grid;
 }
 
 #priority-label,
 #priority-input,
 #Cancel-Todo {
   grid-area: 1 / 5 / 2 / 6;
+  display: grid;
 }
 
 
@@ -145,6 +155,7 @@ body{
 #description-input {
   grid-area: 2 / 1 / 3 / 6;
   width: 100%;
+  display: grid;
   
 }
 
@@ -153,23 +164,27 @@ body{
 #due-date-label,
 #due-date-input {
   grid-area: 3 / 1 / 4 / 2;
+  display: grid;
 }
 
 #status-label,
 #status-input {
   grid-area: 3 / 2 / 4 / 4;
+  display: grid;
 }
 
 #Submit-Todo {
   grid-area: 3 / 5 / 4 / 6;
   background-color: rgba(0,0,0, 0);
   border: none;
+  display: grid;
 }
 
 #Submit-Todo:hover{
   cursor: pointer;
   background-color: green;
   color: white;
+  display: grid;
 }
 
 input {

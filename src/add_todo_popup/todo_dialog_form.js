@@ -21,7 +21,7 @@ parent.appendChild(form);
 
 const title = document.createElement('title');
 title.textContent = 'New Todo';
-title.style.display = 'block';
+title.style.display = 'grid';
 title.id = 'todo-title';
 form.appendChild(title);
 
