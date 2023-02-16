@@ -1,9 +1,18 @@
 :root {
-  background-color: black;
-  color: teal;
+  color: white;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   border: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/cesar-couto-27HiryxnHJk-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 @font-face {
@@ -33,7 +42,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   margin: .5rem;
-  color: rgba(245, 245, 245, 0.508)
+  color: rgba(19, 6, 200, 0.784)
 }
 
 /* reorganize the todo view order to be more intuitive */
