@@ -47,6 +47,8 @@ body{
   color: rgba(19, 6, 200, 0.784)
 }
 
+
+
 /* reorganize the todo view order to be more intuitive */
 .todo-container :nth-child(1),
 .todo-container :nth-child(1)+* {
@@ -81,30 +83,47 @@ body{
 #todo-form{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: .5rem;
+  grid-template-rows: 1fr, 4fr, 1fr;
+  grid-gap: .25rem;
 }
 
 #modal{
   overflow: visible;
+  height: 40vh;
+  border: none;
+}
+
+#modal::backdrop{
+  background: burlywood;
+  opacity: .5;
 }
 
 #Cancel-Todo{
-  grid-area: 1 / 5 / 1 / 5;
   position: relative;
-  top: -4.5rem;
-  left: 5rem;
+  height: 40%;
+  width: 30%;
+  top: -4.25rem;
+  left: 12.5rem;
   background-color: rgba(0,0,0, 0);
   border: none;
+}
+#Cancel-Todo:hover{
+  cursor: pointer;
+  background-color: red;
+  color: white;
 }
 
 #todo-title{
   position: relative;
-  top: -3rem;
+  height: 3rem;
+  width: 10vw;
+  top: -3.25rem;
+  left: -1rem;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Source Sans Pro',
     sans-serif;
+  background-color: white;
 }
 
 #title-label, #title-input, #todo-title{
@@ -116,7 +135,8 @@ body{
 }
 
 #priority-label,
-#priority-input {
+#priority-input,
+#Cancel-Todo {
   grid-area: 1 / 5 / 2 / 6;
 }
 
@@ -124,7 +144,11 @@ body{
 #description-label,
 #description-input {
   grid-area: 2 / 1 / 3 / 6;
+  width: 100%;
+  
 }
+
+
 
 #due-date-label,
 #due-date-input {
@@ -140,6 +164,12 @@ body{
   grid-area: 3 / 5 / 4 / 6;
   background-color: rgba(0,0,0, 0);
   border: none;
+}
+
+#Submit-Todo:hover{
+  cursor: pointer;
+  background-color: green;
+  color: white;
 }
 
 input {

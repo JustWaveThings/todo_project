@@ -6,12 +6,10 @@ export const addTodoButton = document.createElement('button');
 addTodoButton.textContent = 'Add Todo';
 addTodoButton.id = 'add-todo-button';
 addTodoButton.classList = 'add-todo-button';
-console.log(
-	'check for "todoDialog" with document.contains method',
-	document.contains(todoDialog)
-);
+
 addTodoButton.addEventListener('click', () => {
-	modal.style.display = 'grid';
+	modal.style.display = 'flex';
+	modal.style.justifyContent = 'center';
 	addTodoButton.style.display = 'none';
 	todoDialog.showModal();
 });

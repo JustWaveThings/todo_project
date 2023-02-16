@@ -20,7 +20,10 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'ToDo App',
 			template: './src/index.html',
-			favicon: './src/icons/icons8-todo-list-24.png',
+			favicon: path.resolve(
+				__dirname,
+				'./src/icons/icons8-todo-list-24.png'
+			),
 		}),
 	],
 	module: {

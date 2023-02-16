@@ -9,10 +9,10 @@ export const todoList = [];
 const container = document.getElementById('content');
 export const todoDialog = document.createElement('dialog');
 todoDialog.id = 'modal';
+
 container.appendChild(todoDialog);
 
 const parent = document.getElementById('modal');
-console.log({ parent });
 
 export const form = document.createElement('form');
 form.id = 'todo-form';
@@ -20,7 +20,7 @@ form.method = 'dialog';
 parent.appendChild(form);
 
 const title = document.createElement('title');
-title.textContent = 'Add Todo';
+title.textContent = 'New Todo';
 title.style.display = 'block';
 title.id = 'todo-title';
 form.appendChild(title);
