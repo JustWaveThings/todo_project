@@ -10,6 +10,7 @@ import {
 	todoList,
 	form,
 } from './todo_dialog_form';
+import { addTodoButton } from './addTodoButton';
 
 export const submitNewTodo = document.createElement('button');
 submitNewTodo.textContent = 'Submit Todo';
@@ -27,6 +28,8 @@ submitNewTodo.addEventListener('click', (e) => {
 		projectInput.value,
 		statusInput.value
 	);
+	addTodoButton.style.display = 'block';
+	modal.style.display = 'none';
 	todoList.push(jerry);
 	modal.close();
 	form.reset();

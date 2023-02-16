@@ -11,10 +11,8 @@ console.log(
 	document.contains(todoDialog)
 );
 addTodoButton.addEventListener('click', () => {
-	console.log(
-		'check for "todoDialog" with document.contains method',
-		document.contains(todoDialog)
-	);
+	modal.style.display = 'grid';
+	addTodoButton.style.display = 'none';
 	todoDialog.showModal();
 });
 placeTodoButton.appendChild(addTodoButton);

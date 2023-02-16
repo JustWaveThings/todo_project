@@ -12,20 +12,21 @@ container.appendChild(todoDialog);
 
 const parent = document.getElementById('modal');
 console.log({ parent });
-const title = document.createElement('title');
-title.textContent = 'Add Todo';
-title.style.color = 'blue';
-title.style.display = 'block';
-title.id = 'todo-title';
-parent.appendChild(title);
 
 export const form = document.createElement('form');
 form.id = 'todo-form';
 form.method = 'dialog';
 parent.appendChild(form);
 
+const title = document.createElement('title');
+title.textContent = 'Add Todo';
+title.style.display = 'block';
+title.id = 'todo-title';
+form.appendChild(title);
+
 const titleLabel = document.createElement('label');
 titleLabel.textContent = 'Title';
+titleLabel.id = 'title-label';
 form.appendChild(titleLabel);
 
 export const titleInput = document.createElement('input');
@@ -92,6 +93,6 @@ statusInput.name = 'status';
 statusInput.required = false;
 statusLabel.appendChild(statusInput);
 
+// buttons section for modal
 form.appendChild(submitNewTodo);
-
 form.appendChild(cancelNewTodo);

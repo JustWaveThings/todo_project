@@ -75,3 +75,25 @@ body{
 .todo-container :nth-child(11)+* {
   order: 1;
 }
+
+#todo-form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: .5rem;
+}
+
+#modal{
+  overflow: visible;
+}
+
+#Cancel-Todo{
+  grid-area: 1 / 5 / 1 / 5;
+  position: relative;
+  top: -2.5rem;
+}
+
+#todo-title{
+  position: relative;
+  top: -2.5rem;
+}
