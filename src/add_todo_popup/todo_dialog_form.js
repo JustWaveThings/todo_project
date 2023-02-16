@@ -39,6 +39,7 @@ titleLabel.appendChild(titleInput);
 
 const descriptionLabel = document.createElement('label');
 descriptionLabel.textContent = 'Description';
+descriptionLabel.id = 'description-label';
 form.appendChild(descriptionLabel);
 
 export const descriptionInput = document.createElement('input');
@@ -49,6 +50,7 @@ descriptionInput.required = true;
 descriptionLabel.appendChild(descriptionInput);
 
 const dueDateLabel = document.createElement('label');
+dueDateLabel.id = 'due-date-label';
 dueDateLabel.textContent = 'Due Date';
 form.appendChild(dueDateLabel);
 
@@ -61,6 +63,7 @@ dueDateLabel.appendChild(dueDateInput);
 
 const priorityLabel = document.createElement('label');
 priorityLabel.textContent = 'Priority';
+priorityLabel.id = 'priority-label';
 form.appendChild(priorityLabel);
 
 export const priorityInput = document.createElement('input');
@@ -73,6 +76,7 @@ priorityLabel.appendChild(priorityInput);
 
 const projectLabel = document.createElement('label');
 projectLabel.textContent = 'Project';
+projectLabel.id = 'project-label';
 form.appendChild(projectLabel);
 
 export const projectInput = document.createElement('input');
@@ -85,6 +89,7 @@ projectLabel.appendChild(projectInput);
 
 const statusLabel = document.createElement('label');
 statusLabel.textContent = 'Status';
+statusLabel.id = 'status-label';
 form.appendChild(statusLabel);
 
 export const statusInput = document.createElement('input');
