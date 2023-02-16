@@ -26,5 +26,5 @@ function redrawTodoList() {
 		);
 	});
 }
-//redrawTodoList(); // this currently is what breaks the add todo button  // because modal is not defined
+
 export default redrawTodoList;
