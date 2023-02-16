@@ -20,7 +20,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'ToDo App',
 			template: './src/index.html',
-			favicon: './src/icons8-todo-list-24.png',
+			favicon: './src/icons/icons8-todo-list-24.png',
 		}),
 	],
 	module: {
@@ -31,11 +31,11 @@ module.exports = {
 			},
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
-				type: 'asset/resource',
+				use: ['file-loader'],
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
-				type: 'asset/resource',
+				use: ['file-loader'],
 			},
 		],
 	},
