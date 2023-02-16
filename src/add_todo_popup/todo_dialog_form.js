@@ -1,16 +1,18 @@
 import { TodoObject } from '../todo_object';
-import redrawTodoList from '..';
+import redrawTodoList from '../redrawTodoList';
+
 // not sure this goes here, but it will be here for now...
 export const todoList = [];
 
 //this is the form that will be displayed in the modal, to create a new todo
 
 const container = document.getElementById('content');
-const todoDialog = document.createElement('dialog');
+export const todoDialog = document.createElement('dialog');
 todoDialog.id = 'modal';
 container.appendChild(todoDialog);
 
 const parent = document.getElementById('modal');
+console.log({ parent });
 const title = document.createElement('title');
 title.textContent = 'Add Todo';
 title.style.color = 'blue';
@@ -108,13 +110,9 @@ submitNewTodo.addEventListener('click', (e) => {
 		statusInput.value
 	);
 	todoList.push(jerry);
-	console.log(todoList);
-	/* form.reset();
-	console.log('form reset'); */
 	modal.close();
-	console.log('modal close');
+	form.reset();
 	redrawTodoList();
-	console.log(`redrawTodoList`);
 });
 
 form.appendChild(submitNewTodo);
