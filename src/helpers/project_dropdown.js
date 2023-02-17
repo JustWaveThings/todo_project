@@ -1,4 +1,4 @@
-export let projectList = ['None', 'Work', 'School', 'Personal'];
+import { projectList } from './project_list';
 
 export const projectDropdown = () => {
 	const dropdown = document.createElement('select');
@@ -22,14 +22,16 @@ export const projectDropdown = () => {
 
 projectDropdown();
 
-const dropdownValue = document.getElementById('project-dropdown');
+export const dropdownValue = document.getElementById(
+	'project-dropdown'
+);
 const projectInput = {};
 
 dropdownValue.addEventListener('change', (e) => {
 	if (e.target.value === 'add-new-project') {
 		const newProjectName = prompt('Enter new project name');
 		projectList.push(newProjectName);
-		//console.log({ projectList });
+		console.log({ projectList });
 		projectInput.value = newProjectName;
 		console.log(projectInput.value);
 
