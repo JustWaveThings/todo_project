@@ -1,6 +1,9 @@
-import { projectList } from './project_list';
+import {
+	redrawProjectListDropdown,
+	projectList,
+} from './project_list';
 
-export const projectDropdown = () => {
+export const projectDropdown = (() => {
 	const dropdown = document.createElement('select');
 	dropdown.id = 'project-dropdown';
 	dropdown.name = 'project-dropdown';
@@ -18,9 +21,7 @@ export const projectDropdown = () => {
 	dropdown.appendChild(newProjectOption);
 
 	return document.body.appendChild(dropdown);
-};
-
-projectDropdown();
+})();
 
 export const dropdownValue = document.getElementById(
 	'project-dropdown'
