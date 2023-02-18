@@ -5,12 +5,8 @@ import { todoList } from '../add_todo_popup/todo_dialog_form';
 let projectList = ['Sample Project'];
 
 function redrawProjectListDropdown() {
-	if (projectList.length > 1) {
-		projectList.slice(indexOf('Sample Project'), 1);
-		projectList = todoList.map((todo) => todo.getProject());
-		console.log(projectList);
-	}
+	projectList = todoList.map((todo) => todo.getProject());
 	return projectList;
 }
 
-export { redrawProjectListDropdown };
+export { redrawProjectListDropdown, projectList };
