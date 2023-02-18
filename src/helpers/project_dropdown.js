@@ -32,9 +32,7 @@ dropdownValue.addEventListener('change', (e) => {
 	if (e.target.value === 'add-new-project') {
 		const newProjectName = prompt('Enter new project name');
 		projectList.push(newProjectName);
-		console.log({ projectList });
 		projectInput.value = newProjectName;
-		console.log(projectInput.value);
 
 		const newOption = document.createElement('option');
 		newOption.value = newProjectName;
@@ -43,6 +41,5 @@ dropdownValue.addEventListener('change', (e) => {
 		dropdownValue.value = newProjectName;
 	} else {
 		projectInput.value = e.target.value;
-		console.log(projectInput.value);
 	}
 });
