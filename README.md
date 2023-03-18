@@ -5,7 +5,7 @@ NOTE: While I could have made a branch and slashed and burned back to the projec
 
 ## Archived
 
-Just a reminder for where I was in time. I feel it a bit cruel to delete it out of hand.
+Just a reminder for where I was in time. I feel it a bit cruel to delete it out of hand. This app and I, we laughed, we cried, we fought. I feel better leaving it in a suspended state.
 
 
 ### Simple todo app using local storage   -- UPDATE: see note at bottom.
