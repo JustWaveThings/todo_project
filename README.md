@@ -1,4 +1,12 @@
-# todo_project
+# todo_project  (Replaced in new repo by todo_bravo check it out there!)
+
+NOTE: While I could have made a branch and slashed and burned back to the project start, I decided to keep the new repo separate so I could have a fresh start and come back to this if that version didn't pan out. This project suffered from massive global id pollution when I created all my dom elements with id's and taught me the lesson to **NOT** do that ever again. 
+
+
+## Archived
+
+Just a reminder for where I was in time. I feel it a bit cruel to delete it out of hand.
+
 
  Simple todo app using local storage   -- UPDATE: see note at bottom.
 
