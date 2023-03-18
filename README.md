@@ -8,7 +8,7 @@ NOTE: While I could have made a branch and slashed and burned back to the projec
 Just a reminder for where I was in time. I feel it a bit cruel to delete it out of hand.
 
 
- Simple todo app using local storage   -- UPDATE: see note at bottom.
+### Simple todo app using local storage   -- UPDATE: see note at bottom.
 
 ## Project Requirements
 
